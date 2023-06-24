@@ -45,7 +45,7 @@ const Contact = () => {
             <form className="space-y-4" method="POST" action="https://formspree.io/f/xwkdepad">
               <div>
                 <label className="text-gray-200" htmlFor="name">Name</label>
-                <input type="text" id="name" className="w-full border border-gray-300 rounded p-2" />
+                <input type="name" id="name" className="w-full border border-gray-300 rounded p-2" />
               </div>
               <div>
                 <label className="text-gray-200" htmlFor="email">Email</label>
