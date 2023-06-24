@@ -7,18 +7,19 @@ import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 const feedbackData = [
   {
     id: 1,
-    name: 'John Doe',
-    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet vulputate dolor, et aliquam mi consectetur at.',
+    name: 'Gregory Janco',
+    comment:"DigiLev created a fantastic website for our company. They understood our needs and delivered an outstanding product. We highly recommend them!"
+    ,
   },
   {
     id: 2,
-    name: 'Jane Smith',
-    comment: 'Praesent condimentum elit at felis ultrices, id consequat nunc interdum. Sed ut ullamcorper elit.',
+    name: 'Reouven Levi',
+    comment: "I am impressed by the professionalism of DigiLev. Their expertise in web development is remarkable, and their customer service is top-notch. Thank you for a great experience!",
   },
   {
     id: 3,
-    name: 'Mike Johnson',
-    comment: 'Donec gravida est ut magna pharetra, a convallis nulla aliquet. Nam euismod mauris quis metus aliquet, sit amet fringilla nulla aliquam.',
+    name: 'Or Baruch',
+    comment: "Working with DigiLev was a breeze! They brought our vision to life with their exceptional web design skills. The team was responsive, creative, and delivered results beyond our expectations. Highly recommended!",
   },
 ];
 
