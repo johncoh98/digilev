@@ -27,17 +27,6 @@ const Exemples = () => {
     },
   ];
 
-  const handleWorkClick = (workId: number) => {
-    setSelectedWork(workId);
-    const selectedWork = works.find((work) => work.id === workId);
-    if (selectedWork) {
-      const { url, description, title } = selectedWork;
-      console.log('URL:', url);
-      console.log('Description:', description);
-      console.log('Titre:', title);
-    }
-  };
-
   const handleMouseEnter = (workId: number) => {
     setSelectedWork(workId);
   };

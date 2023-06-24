@@ -1,5 +1,5 @@
 "use client"
-import { appWithTranslation } from 'next-i18next';
+
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Feedback from "./components/Feedback"
@@ -22,4 +22,4 @@ function Home() {
   )
 }
 
-export default appWithTranslation(Home)
+export default Home
