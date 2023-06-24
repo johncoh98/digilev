@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { FiMail, FiPhone, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 const Contact = () => {
@@ -71,6 +72,10 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FiPhone className="mr-2" />
                   <a href="tel:+972543692295">+972 54 369 2295</a>
+                </div>
+                <div className='flex items-center'>
+                  <AiOutlineWhatsApp className='mr-2' />
+                    <a href="https://api.whatsapp.com/send?phone=+972543692295">Whatsapp</a>
                 </div>
               </div>
             </div>
