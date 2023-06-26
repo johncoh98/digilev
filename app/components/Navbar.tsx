@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import Image from 'next/image';
 import Logo from '../../public/DigiLev-removebg-preview.png'
-import { useTranslation } from 'react-i18next';
+
 
 
 
@@ -18,7 +18,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className='w-full absolute md:fixed my-4 md:my-0 h-0 md:h-16  z-10 '>
+    <nav className='w-full absolute md:fixed my-4 md:my-0 h-0 md:h-16   z-10 '>
       <div className='flex bg-white  justify-end items-center px-4 h-full w-full 2xl:px-16'>
       <Image 
          src={Logo}

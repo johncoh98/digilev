@@ -6,6 +6,7 @@ import { FiMail, FiPhone, FiLinkedin, FiTwitter } from 'react-icons/fi';
 const Contact = () => {
   const contactSectionRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -27,6 +28,10 @@ const Contact = () => {
     };
   }, []);
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
   return (
     <div
       id="contact"
@@ -42,18 +47,18 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row mb-8">
           <div className="w-full md:w-1/2 p-8 bg-gray-800">
             <h2 className="text-2xl font-bold mb-4 text-gray-200">Contact us</h2>
-            <form className="space-y-4" method="POST" action="https://formspree.io/f/xwkdepad">
+            <form className="space-y-4" action="https://formspree.io/f/xwkdepad" method='POST'>
               <div>
                 <label className="text-gray-200" htmlFor="name">Name</label>
-                <input type="name" id="name" className="w-full border border-gray-300 rounded p-2" />
+                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className="w-full border border-gray-300 rounded p-2" />
               </div>
               <div>
                 <label className="text-gray-200" htmlFor="email">Email</label>
-                <input type="email" id="email" className="w-full border border-gray-300 rounded p-2" />
+                <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}  className="w-full border border-gray-300 rounded p-2" />
               </div>
               <div>
                 <label className="text-gray-200" htmlFor="message">Message</label>
-                <textarea id="message" rows={4} className="w-full border border-gray-300 rounded p-2" />
+                <textarea name="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} className="w-full border border-gray-300 rounded p-2" />
               </div>
               <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
                 Send
