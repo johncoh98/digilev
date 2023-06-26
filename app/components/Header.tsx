@@ -26,9 +26,9 @@ const Hero = () => {
   
 
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-zinc-900">
       <Navbar />
-      <div className="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 bg-hero bg-cover bg-opacity-50 md:flex">
+      <div className="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 bg-hero bg-cover md:flex">
         <div className=" items-center ">
           <div className="lg:text-center ">
             <h1 className="text-4xl mx-4 md:mx-0 tracking-tight font-extrabold text-gray-800  sm:text-5xl md:text-6xl">
@@ -60,7 +60,7 @@ const Hero = () => {
               </button>
             </div>
             <button onClick={scrollToAbout} className="mt-12 animate-bounce">
-              <FiArrowDownCircle size={100} color="blue" />
+              <FiArrowDownCircle size={100} color="royalblue" />
             </button>
           </div>
         </div>
